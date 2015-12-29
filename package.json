@@ -1,0 +1,21 @@
+{
+  "name": "bb8-ci-monitor",
+  "version": "0.0.0",
+  "license": "GPL-1.0",
+  "description": "bb8 circleci monitor",
+  "repository": {
+    "type": "git",
+    "url": "foo.git"
+  },
+  "scripts": {
+    "start": "node start.js"
+  },
+  "main": "/dev/null/index.js",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "sphero": ">=0",
+    "noble": ">=0"
+  },
+  "author": "Jon Bardin"
+}
