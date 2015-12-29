@@ -1,5 +1,5 @@
 {
-  "name": "bb8-ci-monitor",
+  "name": "build-bot-8",
   "version": "0.0.0",
   "license": "GPL-1.0",
   "description": "bb8 circleci monitor",
