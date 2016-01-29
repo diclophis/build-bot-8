@@ -44,19 +44,21 @@ noble.on('discover', function(peripheral) {
             }
             console.log("random location");
             //var direction = Math.floor(Math.random() * 360);
-            var cmdTimeout = 300.0;
+            var cmdTimeout = 33.0;
             if (directionIntended) {
               //direction += parseInt(360.0 * (cmdTimeout / 1000.0));
             } else {
               //direction -= parseInt(360.0 * (cmdTimeout / 1000.0));
             }
-            if (Math.random() > 0.5) {
-              directionIntended = !directionIntended;
-              direction += 100;
-            }
+            //if (Math.random() > 0.5) {
+            //  directionIntended = !directionIntended;
+            //}
+              //direction += 100 * directionIntended;
+            //}
+            direction += 25; //( * directionIntended);
             console.log(direction);
             direction = Math.abs(direction) % 360;
-            bb8.roll(500, direction, function(rollState) { console.log("rolling", rollState); setTimeout(randomDir, cmdTimeout); });
+            bb8.roll(75, direction, function(rollState) { console.log("rolling", rollState); setTimeout(randomDir, cmdTimeout); });
           };
           randomDir();
         }, 2000);
